@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_qlk_authenticator_root" name="Authenticator"
+            sequence="1"
+            web_icon="qlk_authenticator,static/description/icon.png"
+            action="act_open_qlk_authenticator_view"  groups="group_qlk_authenticator" />
+
+    </data>
+</odoo>

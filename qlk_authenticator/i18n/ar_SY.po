@@ -1,0 +1,155 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* qlk_authenticator
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-23 21:13+0000\n"
+"PO-Revision-Date: 2017-09-23 21:13+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: qlk_authenticator
+#: model:ir.module.category,name:qlk_authenticator.module_qlk_authenticator
+#: model:ir.ui.view,arch_db:qlk_authenticator.base_res_user_form_inherit
+msgid "App Authenticator"
+msgstr "حماية"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_name_6978
+msgid "App Authenticator For"
+msgstr "تطبيق أداة المصادقة ل"
+
+#. module: qlk_authenticator
+#: model:ir.actions.act_window,name:qlk_authenticator.act_open_qlk_authenticator_view
+#: model:ir.ui.menu,name:qlk_authenticator.menu_qlk_authenticator_root
+#: model:ir.ui.view,arch_db:qlk_authenticator.view_qlk_authenticator_form
+msgid "Authenticator"
+msgstr "حماية"
+
+#. module: qlk_authenticator
+#: code:addons/qlk_authenticator/models/qlk_authenticator.py:32
+#, python-format
+msgid "Contact Your Administrator to Activate your APP AUTH CODE"
+msgstr "اتصل بالمسؤول الخاص بك لتفعيل كود otp الخاص بك"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_current_otp
+#: model:ir.model.fields,field_description:qlk_authenticator.field_res_users_current_otp
+msgid "Current OTP"
+msgstr "الحالي OTP"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_otp_status
+#: model:ir.model.fields,field_description:qlk_authenticator.field_res_users_otp_status
+msgid "Enable One Time Passwords Login"
+msgstr "تمكين كلمة مرور واحدة تسجيل الدخول"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: qlk_authenticator
+#: model:ir.ui.view,arch_db:qlk_authenticator.qlk_otp_confirmation_template
+msgid "One Time Password"
+msgstr "كلمة السر لمرة واحدة"
+
+#. module: qlk_authenticator
+#: code:addons/qlk_authenticator/controllers/controller.py:75
+#, python-format
+msgid "One Time Password is Incorrect!"
+msgstr "كلمة المرور مرة واحدة غير صحيحة!"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_qr_otp
+#: model:ir.model.fields,field_description:qlk_authenticator.field_res_users_qr_otp
+msgid "QR To Scan"
+msgstr "QR لمسح"
+
+#. module: qlk_authenticator
+#: model:ir.ui.view,arch_db:qlk_authenticator.base_res_user_form_inherit
+msgid "Regenerate"
+msgstr "تجدد"
+
+#. module: qlk_authenticator
+#: model:ir.ui.view,arch_db:qlk_authenticator.base_res_user_form_inherit
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_retry_limit
+#: model:ir.model.fields,field_description:qlk_authenticator.field_res_users_retry_limit
+msgid "Retry Limit"
+msgstr "إعادة المحاولة"
+
+#. module: qlk_authenticator
+#: model:ir.model.fields,field_description:qlk_authenticator.field_qlk_authenticator_base32_secret_key
+#: model:ir.model.fields,field_description:qlk_authenticator.field_res_users_base32_secret_key
+msgid "Secret Key"
+msgstr "مفتاح السر"
+
+#. module: qlk_authenticator
+#: model:res.groups,name:qlk_authenticator.group_qlk_authenticator
+msgid "User "
+msgstr "المستعمل "
+
+#. module: qlk_authenticator
+#: model:ir.model,name:qlk_authenticator.model_res_users
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: qlk_authenticator
+#: model:ir.ui.view,arch_db:qlk_authenticator.qlk_otp_confirmation_template
+msgid "Verify"
+msgstr "التحقق"
+
+#. module: qlk_authenticator
+#: code:addons/qlk_authenticator/controllers/controller.py:61
+#, python-format
+msgid "Wrong login/password"
+msgstr "خطأ دخول / كلمة المرور"
+
+#. module: qlk_authenticator
+#: model:ir.model,name:qlk_authenticator.model_qlk_authenticator
+msgid "qlk.authenticator"
+msgstr "أداة المصادقة"
+
+
+

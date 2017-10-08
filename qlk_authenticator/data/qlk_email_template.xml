@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    <!--<data noupdate="1">-->
+
+
+        <record id="qlk_authenticator_email_template" model="mail.template">
+            <field name="name">Authenticator email</field>
+             <field name="model_id" ref="qlk_authenticator.model_qlk_authenticator"/>
+            <field name="email_from"><![CDATA["${object.company|safe}" <${(object.company_email)}>]]></field>
+            <field name="email_to">${object.email|safe}</field>
+            <!--<field name="email_from">${object.company_id and object.company_id.email or ''}</field>-->
+            <field name="subject">QR Authenticator</field>
+            <!--<field name="lang">${object.lang}</field>-->
+            <field name="auto_delete" eval="False"/>
+            <field name="user_signature" eval="False"/>
+            <field name="body_html">
+                <![CDATA[
+	          <p>Dear ${(object.name)},<br/><br/>
+		       You've just generate your one time password!<br/>
+		       Keep your secret key (${object.base32_secret_key}) safe and scan the QR code below to generate your OTP on your mobile.
+		       </p>
+		       <img src="data:image/png;base64,${object.qr_otp}" style="width: 150px;" />
+		       <br/><br/>
+
+                  Regards,<br/>
+                  ${(object.company)}
+	    ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

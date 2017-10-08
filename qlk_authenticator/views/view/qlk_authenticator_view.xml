@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+        <record id="view_qlk_authenticator_form" model="ir.ui.view">
+            <field name="name">qlk.authenticator.form</field>
+            <field name="model">qlk.authenticator</field>
+            <field name="priority" eval="1"/>
+            <field name="arch" type="xml">
+            <form string="Authenticator" create="false" edit="false" delete="false" write="false">
+               <group name="container_row" col="1">
+                   <field name="name"/>
+                                <group col="2" >
+                                    <field name="base32_secret_key"/>
+                                    <!--<button name="generate_secret_key" type="object" string="Regenerate"/>-->
+                                </group>
+                                <group col="2" >
+                                    <field name="otp_status"/>
+                                    <field name="current_otp"/>
+                                    <field name="retry_limit"/>
+                                    <field name="qr_otp" widget="image"/>
+                                </group>
+               </group>
+            </form>
+
+            </field>
+        </record>
+
+
+
+
+        <record model="ir.actions.act_window" id="act_open_qlk_authenticator_view">
+            <field name="name">Authenticator</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">qlk.authenticator</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+
+                </p>
+                <p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                </p>
+            </field>
+        </record>
+
+
+
+    </data>
+</odoo>
