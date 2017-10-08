@@ -22,6 +22,7 @@
     'depends' : ['base','base_setup','web','mail','contacts'
 
                  ],
+    'images': ['images/main_1.png'],
     'external_dependencies': {
             'python': [
                 'pyotp',
