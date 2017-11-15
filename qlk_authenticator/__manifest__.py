@@ -46,7 +46,7 @@
     # only loaded in demonstration mode
     'demo': [],
     'installable': True,
-    'price': 45.00,
+    'price': 35.00,
     'currency': 'EUR',
 
 }
