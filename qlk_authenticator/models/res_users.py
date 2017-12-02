@@ -95,7 +95,7 @@ class ResUsers(models.Model):
             return False
         else:
             for userData in user_ids:
-                userData.retry_limit = userData.retry_limit + 1
+                # userData.retry_limit = userData.retry_limit + 1
                 if userData.retry_limit >3 and uid != "1" :
                     del request.session['loginKey']
                     return False
@@ -104,7 +104,7 @@ class ResUsers(models.Model):
                     now_otp = totp.now()
                     # print now_otp
                     if otp == now_otp:
-                        userData.retry_limit = 0
+                        # userData.retry_limit = 0
                         del request.session['loginKey']
                         return (dbname, userData.login, loginkey)
                     else:

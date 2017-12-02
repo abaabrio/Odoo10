@@ -40,9 +40,7 @@ class Home(main.Home):
                     env = api.Environment(cr, SUPERUSER_ID, {})
                     getUserBrowse = env['res.users'].sudo().browse(uid)
                     otp_status = getUserBrowse[0].otp_status
-                    # otp_status=False
                     if otp_status:
-                            # logout = request.session.logout(keep_db=False)
                             logout = request.session.logout(keep_db=True)
                             request.session['loginKey'] = kw['password']
                             request.session['user_identity'] = uid
@@ -75,12 +73,11 @@ class Home(main.Home):
             user_obj = http.request.env['res.users']
             credentials = user_obj.opt_authenticate({'uid': request.params['uid'],'otp': request.params['otp']})
             if credentials:
+                request.params['login_success'] = True
                 return login_and_redirect(*credentials, redirect_url='/web')
             else:
                 logout = request.session.logout(keep_db=True)
                 # values = request.params.copy()
-                # print values
-                # print "*****5"
                 values['error'] = _(
                     "One Time Password is Incorrect!")
                 return werkzeug.utils.redirect('/web/login')
