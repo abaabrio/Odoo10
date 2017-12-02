@@ -15,7 +15,7 @@
     'author': "Abaab Riadh",
     'website': "http://www.qlinksoftware.com",
     'license': 'OPL-1',
-    'version': '1.0',
+    'version': '1.1',
     'application': True,
     'category': 'System',
     "sequence": 1,
